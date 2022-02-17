@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>THE VELVET BOX</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="oss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+        
+        .jumbotron {
+            margin-bottom: 0;
+        }
+        
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <div class="container text-center">
+        <marquee style="font-size: 50px;" >   THE VELVET BOX
+            <p>Accessorize yourself for every moment</p></marquee> 
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+    </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .container {
+            position: relative;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .cursor {
+            cursor: pointer;
+        }
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+        
+        .demo {
+            opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+
+    <body>
+
+        <h2 style="text-align:center">Slideshow Gallery</h2>
+
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext" >1 / 6</div>
+                <img src="https://i.pinimg.com/236x/f8/91/6f/f8916fec37eae87729eb041114a1478f.jpg" style="width:80%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="https://i.pinimg.com/236x/ec/da/31/ecda319eade54303e3e5fd7d553b57a2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="https://i.pinimg.com/236x/73/70/23/737023cc17cceb688d08b4e9c40582e1.jpg"  style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="https://i.pinimg.com/236x/00/79/49/007949e36e15061230497291bc76382c.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="https://i.pinimg.com/236x/a5/3f/65/a53f6519164552f7136fb24802b04718.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="https://i.pinimg.com/236x/e6/1e/d8/e61ed842aa709ba1aec10afaa7fa22c6.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/f8/91/6f/f8916fec37eae87729eb041114a1478f.jpg" style="width:100%"
+                        onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/ec/da/31/ecda319eade54303e3e5fd7d553b57a2.jpg" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/73/70/23/737023cc17cceb688d08b4e9c40582e1.jpg" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/00/79/49/007949e36e15061230497291bc76382c.jpg" style="width:100%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/a5/3f/65/a53f6519164552f7136fb24802b04718.jpg" style="width:100%" onclick="currentSlide(5)">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="https://i.pinimg.com/236x/e6/1e/d8/e61ed842aa709ba1aec10afaa7fa22c6.jpg" style="width:100%" onclick="currentSlide(6)">
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                captionText.innerHTML = dots[slideIndex - 1].alt;
+            }
+        </script>
+    </body>
+</body>
+
+</html>
